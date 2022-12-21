@@ -1,6 +1,6 @@
 # EDWINNERS
 
- GitHub pages website to track my friend's Slippi ranks.
+GitHub pages website to track my friend's Slippi ranks.
 
 ## Available Scripts
 
