@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+.title {
+  font-weight: 600;
+  font-size: calc(25px + 2vmin);
+}
+
+.updated {
+  font-size: calc(2vmin);
+  color: lightgray;
+}
+
+table {
+  margin-top: 15px;
+}
+
+td {
+  padding: 5px 10px 5px 10px;
+}
+
+.playerCode {
+  font-size: calc(1.5vmin);
+  color: lightgray;
+}
+
+.wins {
+  color: lightgreen;
+}
+
+.losses {
+  color: lightcoral;
+}
+
+.bronze {
+  color: #967444;
+}
+
+.silver {
+  color: #d2d4d6;
+}
+
+.gold {
+  color: goldenrod;
+}
+
+.plat {
+  color: lightseagreen;
+}
+
+.diamond {
+  color: lightskyblue;
+}
+
+.master {
+  color: darkred;
+}
