@@ -120,7 +120,6 @@ function App() {
         </thead>
         <tbody>
           {ranks.map(rankInfo => {
-            console.log(rankInfo);
             return (
               <tr key={rankInfo.code}>
                 <td>
