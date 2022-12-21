@@ -2,6 +2,8 @@
 
 GitHub pages website to track my friend's Slippi ranks.
 
+https://scottn12.github.io/
+
 ## Available Scripts
 
 In the project directory, you can run:
