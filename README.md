@@ -2,7 +2,7 @@
 
 GitHub pages website to track my friend's Slippi ranks.
 
-https://scottn12.github.io/
+[scottn12.github.io](https://scottn12.github.io/)
 
 ## Available Scripts
 
