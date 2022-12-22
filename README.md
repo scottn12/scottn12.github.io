@@ -1,4 +1,4 @@
-# EDWINNERS
+# EdWinners Leaderboard
 
 GitHub pages website to track my friend's Slippi ranks.
 
