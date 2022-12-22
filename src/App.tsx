@@ -75,7 +75,15 @@ const getRankClass = (elo: number): string => {
   return "master";
 }
 
-const gamers = ["SKAHT#0", "EDWIN#0", "PETE#653", "EBEN#786", "SUPA#776", "NGFM#267"];
+const gamers = [
+  "SKAHT#0", 
+  "EDWIN#0", 
+  "PETE#653", 
+  "EBEN#786", 
+  "SUPA#776", 
+  "NGFM#267",
+  "YARN#567",
+];
 
 function App() {
   const [ranks, setRanks] = React.useState<RankInfo[]>();
