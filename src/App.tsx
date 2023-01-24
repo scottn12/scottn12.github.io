@@ -163,15 +163,6 @@ function App() {
           })}
         </tbody>
       </table>
-      <div className="ego-checker">
-        <div className="ego-checker-title">Ego Checker</div>
-        <input
-          type="text"
-          onChange={(e) => setInputValue(e.target.value)}
-          onKeyDown={(e) => { if (e.key === "Enter") onSearch(); }}
-        />
-        <button onClick={onSearch} disabled={inputValue === ""}>Search</button>
-      </div>
     </header>
   </div>
   );
