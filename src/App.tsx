@@ -1,4 +1,7 @@
-import React from 'react';
+import { 
+  useEffect, 
+  useState 
+} from 'react';
 import eggwin from './eggwin.png';
 import './App.css';
 
@@ -83,10 +86,16 @@ const gamers = [
   "SUPA#776", 
   "NGFM#267",
   "YARN#567",
+  "PAYC#938",
 ];
 
 function App() {
-  const [ranks, setRanks] = React.useState<RankInfo[]>();
+  
+
+  const [ranks, setRanks] = useState<RankInfo[]>();
+  const [searchedRank, setSearchedRank] = useState<RankInfo>();
+  const [error, setError] = useState<boolean>(false);
+  const [inputValue, setInputValue] = useState<string>("");
 
   const getRanks = async () => {
     const ranks = await Promise.all(gamers.map(getRankInfo));
@@ -94,7 +103,18 @@ function App() {
     setRanks(ranks);
   };
 
-  React.useEffect(() => {
+  const onSearch = async () => {
+    setSearchedRank(undefined);
+    setError(false);
+    try {
+      const rankInfo: RankInfo = await getRankInfo(inputValue);
+      setSearchedRank(rankInfo);
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  useEffect(() => {
     if (ranks === undefined) {
       getRanks();
     }
@@ -143,6 +163,15 @@ function App() {
           })}
         </tbody>
       </table>
+      <div className="ego-checker">
+        <div className="ego-checker-title">Ego Checker</div>
+        <input
+          type="text"
+          onChange={(e) => setInputValue(e.target.value)}
+          onKeyDown={(e) => { if (e.key === "Enter") onSearch(); }}
+        />
+        <button onClick={onSearch} disabled={inputValue === ""}>Search</button>
+      </div>
     </header>
   </div>
   );
