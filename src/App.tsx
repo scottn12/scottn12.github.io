@@ -89,6 +89,7 @@ const gamers = [
   "PAYC#938",
   "KEEF#420",
   "WACK#264",
+  "DONE#490",
 ];
 
 function App() {
