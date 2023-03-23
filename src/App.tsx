@@ -90,6 +90,7 @@ const gamers = [
   "KEEF#420",
   "WACK#264",
   "DONE#490",
+  "JIZZ#478",
 ];
 
 function App() {
