@@ -94,28 +94,13 @@ const gamers = [
 ];
 
 function App() {
-  
-
   const [ranks, setRanks] = useState<RankInfo[]>();
-  const [searchedRank, setSearchedRank] = useState<RankInfo>();
-  const [error, setError] = useState<boolean>(false);
-  const [inputValue, setInputValue] = useState<string>("");
 
   const getRanks = async () => {
-    const ranks = await Promise.all(gamers.map(getRankInfo));
+    const ranks = (await Promise.all(gamers.map(getRankInfo)))
+      .filter((rankInfo => rankInfo.wins + rankInfo.losses >= 5));;
     ranks.sort((a, b) => b.elo - a.elo);
     setRanks(ranks);
-  };
-
-  const onSearch = async () => {
-    setSearchedRank(undefined);
-    setError(false);
-    try {
-      const rankInfo: RankInfo = await getRankInfo(inputValue);
-      setSearchedRank(rankInfo);
-    } catch (e) {
-      console.error(e);
-    }
   };
 
   useEffect(() => {
