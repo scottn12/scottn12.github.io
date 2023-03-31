@@ -69,19 +69,19 @@ td {
 }
 
 .bronze {
-  color: #967444;
+  color: #d59d4e;
 }
 
 .silver {
-  color: silver;
+  color: #cdcdcd;
 }
 
 .gold {
-  color: goldenrod;
+  color: #ffc534;
 }
 
 .plat {
-  color: lightseagreen;
+  color: #2de7dd;
 }
 
 .diamond {
@@ -89,5 +89,5 @@ td {
 }
 
 .master {
-  color: darkred;
+  color: #ff0b0b;
 }
