@@ -73,7 +73,7 @@ td {
 }
 
 .silver {
-  color: #cdcdcd;
+  color: #e5e5e5;
 }
 
 .gold {
@@ -81,13 +81,13 @@ td {
 }
 
 .plat {
-  color: #05dda1;
+  color: #08e3d9;
 }
 
 .diamond {
-  color: #5dc1ff;
+  color: #4dc5ff;
 }
 
 .master {
-  color: #ff0b0b;
+  color: #ff0000;
 }
